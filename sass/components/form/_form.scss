@@ -1,0 +1,25 @@
+.form {
+	display: inline-block;
+
+    &__input {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        padding: 15px 16px 15px 16px;
+        outline: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: inherit;
+        transition-property: border-color;
+        transition-duration:  var(--transition-duration);
+        transition-timing-function: var(--timing-function);
+    }
+    &__input:focus-within {
+        border-color: var(--accent-color);
+        color: var(--main-background-color);
+    }
+}

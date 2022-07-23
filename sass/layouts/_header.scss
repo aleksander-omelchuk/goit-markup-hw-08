@@ -1,0 +1,16 @@
+.header {
+	border-bottom: 1px solid var(--header-border-color);
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+    &__logo--color {
+        color: var(--main-second-color);
+    }
+}

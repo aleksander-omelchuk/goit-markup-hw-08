@@ -1,18 +1,28 @@
 .about {
-  
-	display: flex;
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
 
-    &__item:hover .overlay {
-        opacity: 1;
+        &__item:hover .overlay {
+            opacity: 1;
+        }
+        
+        &__item {
+            position: relative;
+            overflow: hidden;
+            margin-right: 30px;
+        }
+        &__item:last-child {
+            margin-right: 0;
+        }
     }
-    
-    &__item {
-        position: relative;
-        overflow: hidden;
-        margin-right: 30px;
-    }
-    &__item:last-child {
-        margin-right: 0;
+	
+}
+.about__section {
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        padding-top: 0;
     }
 }
 

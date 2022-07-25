@@ -7,8 +7,18 @@
     }
 
     &__logo {
-        padding-top: 24px;
-        padding-bottom: 25px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        @media screen and (min-width: 768px) {  
+            padding-top: 26px;
+                padding-bottom: 26px;
+        }
+
+                        @media screen and (min-width: 1200px) {
+                            padding-top: 24px;
+                            padding-bottom: 25px;
+                        }
     }
     &__logo--color {
         color: var(--main-second-color);

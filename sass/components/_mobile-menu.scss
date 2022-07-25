@@ -1,0 +1,130 @@
+.btn-menu {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    z-index: 1000;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+}
+
+.btn-menu__burger {
+	transition: 500ms;
+
+	.btn-menu.is-open & {
+		opacity: 0;
+	}
+}
+
+.btn-menu__close {
+    fill: #212121;
+    opacity: 0;
+	transition: 500ms;
+
+    .btn-menu.is-open & {
+		opacity: 1;
+	}
+}
+
+
+
+.mobile-menu {
+    position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transform: translateX(100%);
+
+	width: 100vw;
+	height: 100vh;
+	padding: 48px 40px;
+
+	display: flex;
+	flex-direction: column;
+
+	background-color: #fff;
+
+	transition: transform 500ms;
+
+	&.is-open {
+		transform: translateX(0);
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.mobile-menu-nav {
+	margin-bottom: auto;
+
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.17;
+	letter-spacing: 0.02em;
+	
+    &__link {
+        color: var(--titel-color);
+
+    }
+    &__link--current {
+        color:var(--accent-color);
+    }
+}
+.mobile-menu-nav__item {
+	&:not(:last-child) {
+		margin-bottom: 32px;
+	}
+
+}
+
+.mobile-menu-contact {
+
+    font-weight: 500;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+    &__link {
+        color: #757575;
+    }
+    &__link--current {
+        font-size: 34px;
+		color: var(--accent-color);
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    &__item:last-child {
+        margin-bottom: 64px;
+    }
+}
+
+
+.mobile-menu-social {
+    display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+
+    &__link {
+    font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: 0.02em;
+	color: var(--accent-color);
+    }
+}
+
+.mobile-menu-social__item:not(:last-child) .mobile-menu-social__link {
+	padding-right: 10px;
+	border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+

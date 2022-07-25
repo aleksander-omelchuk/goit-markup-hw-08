@@ -1,10 +1,19 @@
 .nav {
+    display: none;
+    @media screen and (min-width: 768px) {
+		display: block;
+	}
+
     &__list {
         display: flex;
         align-items: center;
+        gap: 50px;
     }
     &__list--location {
-        margin-left: 93px;
+        margin-left: 87px;
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
     }
     &__item,
     &__link {
@@ -16,9 +25,7 @@
         transition-duration: var(--transition-duration);
         transition-timing-function: var(--timing-function);
     }
-    &__item:not(:last-child) {
-        margin-right: 50px;
-    }
+ 
     &__link:hover,
     &__link:focus {
         color: var(--accent-color);
@@ -28,7 +35,7 @@
     }
     &__link {
         display: block;
-        padding-top: 33px;
+        padding-top: 32px;
         padding-bottom: 32px;
         position: relative;
     }
@@ -45,3 +52,5 @@
         background-color: var(--accent-color);
     }
 }
+
+   

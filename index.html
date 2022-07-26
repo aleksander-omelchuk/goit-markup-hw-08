@@ -61,7 +61,6 @@
 		</div>
 	</header>
 	<div class="mobile-menu" data-menu>
-
 		<ul class="mobile-menu-nav">
 			<li class="mobile-menu-nav__item">
 				<a class="mobile-menu-nav__link mobile-menu-nav__link--current" href="./index.html">Студия</a>
@@ -104,7 +103,7 @@
 	</div>
 	<main>
 		<!-- hero -->
-		<section class="hero">
+		<section class="hero hero__container">
 			<div class="container">
 				<h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
 				<button class="button" type="button" data-modal-open> Заказать услугу </button>
@@ -219,19 +218,55 @@
 				<h2 class="section__title">Чем мы занимаемся</h2>
 				<ul class="about">
 					<li class="about__item">
-						<img src="./images/boxone.jpg" alt="робота з клавиатурой" width="370" height="294" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/about/about-03_lg.webp 1x, ./images/about/about-03_lg@2x.webp 2x"
+								type="image/jpg/webp" />
+							<source media="(min-width: 1200px)"
+								srcset="./images/about/about-03_lg.jpg 1x, ./images/about/about-03_lg@2x.jpg 2x"
+								type="image/jpg/webp" />
+							 <img
+								srcset="./images/about/about-03_lg.jpg 1x, ./images/about/about-03_lg@2x.jpg 2x"
+								src="./images/about/about-03_lg.jpg" alt="робота з клавиатурой" width="370"
+								height="294" />
+						</picture>
+
 						<div class="overlay">
 							<p class="overlay--descr">Десктопные приложения</p>
 						</div>
 					</li>
 					<li class="about__item">
-						<img src="./images/boxtwo.jpg" alt="робота з телефонам" width="370" height="294" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/about/about-02_lg.webp 1x, ./images/about/about-02_lg@2x.webp 2x"
+								type="image/jpg/webp" />
+							<source media="(min-width: 1200px)"
+								srcset="./images/about/about-02_lg.jpg 1x, ./images/about/about-02_lg@2x.jpg 2x"
+								type="image/jpg/webp" />
+							 <img
+								srcset="./images/about/about-02_lg.jpg 1x, ./images/about/about-02_lg@2x.jpg 2x"
+								src="./images/about/about-02_lg.jpg" alt="робота з телефонам" width="370"
+								height="294" />
+						</picture>
+						
 						<div class="overlay">
 							<p class="overlay--descr">Мобильные приложения</p>
 						</div>
 					</li>
 					<li class="about__item">
-						<img src="./images/boxthree.jpg" alt="робота з планшетом" width="370" height="294" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/about/about-01_lg.webp 1x, ./images/about/about-01_lg@2x.webp 2x"
+								type="image/jpg/webp" />
+							<source media="(min-width: 1200px)"
+								srcset="./images/about/about-01_lg.jpg 1x, ./images/about/about-01_lg@2x.jpg 2x"
+								type="image/jpg/webp" />
+							 <img
+								srcset="./images/about/about-01_lg.jpg 1x, ./images/about/about-01_lg@2x.jpg 2x"
+								src="./images/about/about-01_lg.jpg" alt="робота з планшетом" width="370"
+								height="294" />
+						</picture>
+						
 						<div class="overlay">
 							<p class="overlay--descr">Дизайнерские решения</p>
 						</div>
@@ -245,7 +280,30 @@
 				<h2 class="section__title">Наша команда</h2>
 				<ul class="team card-set">
 					<li class="team__item card-set__item">
-						<img src="./images/proddesigner.jpg" alt="продакт дизайнер" width="270" height="260" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/team-04_lg.webp 1x, ./images/team/team-04_lg@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/team-04_lg.jpg 1x, ./images/team/team-04_lg@2x.jpg 2x"
+								type="image/jpg" />
+							<source media="(min-width: 768px)"
+								srcset="./images/team/team-04_md.webp 1x, ./images/team/team-04_md@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(min-width: 768px)"
+								srcset="./images/team/team-04_md.jpg 1x, ./images/team/team-04_md@2x.jpg 2x"
+								type="image/jpg" />
+							<source media="(max-width: 767px)"
+								srcset="./images/team/team-04_sm.webp 1x, ./images/team/team-04_sm@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(max-width: 767px)"
+								srcset="./images/team/team-04_sm.jpg 1x, ./images/team/team-04_sm@2x.jpg 2x"
+								type="image/jpg" />
+
+							<img srcset="./images/team/team-04_sm.jpg 1x, ./images/team/team-01_sm@2x.jpg 2x"
+								src="./images/team/team-04_sm.jpg" alt="продакт дизайнер" width="450" height="460" />
+						</picture>
+
 						<h3 class="team__name">Игорь Демьяненко</h3>
 						<p class="team__descr" lang="en">Product Designer</p>
 						<ul class="social-media social-media--position">
@@ -277,7 +335,30 @@
 						</ul>
 					</li>
 					<li class="team__item card-set__item">
-						<img src="./images/frontend.jpg" alt="фронтенд розробник" width="270" height="260" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/team-03_lg.webp 1x, ./images/team/team-03_lg@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/team-03_lg.jpg 1x, ./images/team/team-03_lg@2x.jpg 2x"
+								type="image/jpg" />
+							<source media="(min-width: 768px)"
+								srcset="./images/team/team-03_md.webp 1x, ./images/team/team-03_md@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(min-width: 768px)"
+								srcset="./images/team/team-03_md.jpg 1x, ./images/team/team-03_md@2x.jpg 2x"
+								type="image/jpg" />
+							<source media="(max-width: 767px)"
+								srcset="./images/team/team-03_sm.webp 1x, ./images/team/team-03_sm@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(max-width: 767px)"
+								srcset="./images/team/team-03_sm.jpg 1x, ./images/team/team-03_sm@2x.jpg 2x"
+								type="image/jpg" />
+
+							<img srcset="./images/team/team-03_sm.jpg 1x, ./images/team/team-01_sm@2x.jpg 2x"
+								src="./images/team/team-03_sm.jpg" alt="фронтенд розробник" width="450" height="460" />
+						</picture>
+
 						<h3 class="team__name">Ольга Репина</h3>
 						<p class="team__descr" lang="en">Frontend Developer</p>
 						<ul class="social-media social-media--position">
@@ -309,7 +390,30 @@
 						</ul>
 					</li>
 					<li class="team__item card-set__item">
-						<img src="./images/marketing.jpg" alt="маркетолог" width="270" height="260" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/team-02_lg.webp 1x, ./images/team/team-02_lg@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/team-02_lg.jpg 1x, ./images/team/team-02_lg@2x.jpg 2x"
+								type="image/jpg" />
+							<source media="(min-width: 768px)"
+								srcset="./images/team/team-02_md.webp 1x, ./images/team/team-02_md@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(min-width: 768px)"
+								srcset="./images/team/team-02_md.jpg 1x, ./images/team/team-02_md@2x.jpg 2x"
+								type="image/jpg" />
+							<source media="(max-width: 767px)"
+								srcset="./images/team/team-02_sm.webp 1x, ./images/team/team-02_sm@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(max-width: 767px)"
+								srcset="./images/team/team-02_sm.jpg 1x, ./images/team/team-02_sm@2x.jpg 2x"
+								type="image/jpg" />
+
+							<img srcset="./images/team/team-02_sm.jpg 1x, ./images/team/team-01_sm@2x.jpg 2x"
+								src="./images/team/team-02_sm.jpg" alt="маркетолог" width="450" height="460" />
+						</picture>
+
 						<h3 class="team__name">Николай Тарасов</h3>
 						<p class="team__descr" lang="en">Marketing</p>
 						<ul class="social-media social-media--position">
@@ -341,7 +445,30 @@
 						</ul>
 					</li>
 					<li class="team__item card-set__item">
-						<img src="./images/designer.jpg" alt="дизайнер" width="270" height="260" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/team-01_lg.webp 1x, ./images/team/team-01_lg@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/team-01_lg.jpg 1x, ./images/team/team-01_lg@2x.jpg 2x"
+								type="image/jpg" />
+							<source media="(min-width: 768px)"
+								srcset="./images/team/team-01_md.webp 1x, ./images/team/team-01_md@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(min-width: 768px)"
+								srcset="./images/team/team-01_md.jpg 1x, ./images/team/team-01_md@2x.jpg 2x"
+								type="image/jpg" />
+							<source media="(max-width: 767px)"
+								srcset="./images/team/team-01_sm.webp 1x, ./images/team/team-01_sm@2x.webp 2x"
+								type="image/jpg" />
+							<source media="(max-width: 767px)"
+								srcset="./images/team/team-01_sm.jpg 1x, ./images/team/team-01_sm@2x.jpg 2x"
+								type="image/jpg" />
+
+							<img srcset="./images/team/team-01_sm.jpg 1x, ./images/team/team-01_sm@2x.jpg 2x"
+								src="./images/team/team-01_sm.jpg" alt="дизайнер" width="450" height="460" />
+						</picture>
+
 						<h3 class="team__name">Михаил Ермаков</h3>
 						<p class="team__descr" lang="en">UI Designer</p>
 						<ul class="social-media social-media--position">
@@ -429,7 +556,6 @@
 	<!--footer-->
 	<footer class="footer">
 		<div class="container container__footer">
-
 			<div class="footer__wrapper">
 				<a class="logo footer__logo" href="WebStudio" aria-label="logo">
 					Web<span class="footer__logo--color">Studio</span></a>

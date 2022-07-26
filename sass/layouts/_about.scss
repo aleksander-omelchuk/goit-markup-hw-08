@@ -1,7 +1,10 @@
 .about {
     display: none;
+    
     @media screen and (min-width: 1200px) {
         display: flex;
+        gap: 30px;
+      
 
         &__item:hover .overlay {
             opacity: 1;
@@ -10,11 +13,9 @@
         &__item {
             position: relative;
             overflow: hidden;
-            margin-right: 30px;
+         
         }
-        &__item:last-child {
-            margin-right: 0;
-        }
+       
     }
 	
 }
@@ -23,6 +24,7 @@
     @media screen and (min-width: 1200px) {
         display: flex;
         padding-top: 0;
+      
     }
 }
 

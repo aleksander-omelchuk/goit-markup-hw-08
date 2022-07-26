@@ -1,13 +1,22 @@
 .form {
-	display: inline-block;
+    display: flex;
+
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+    }
+
+    flex-direction: column;
+    align-items: center;
 
     &__input {
         font-size: 16px;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-        width: 358px;
+        min-width: 450px;
         height: 50px;
-        margin-right: 12px;
+        
+        margin-bottom: 60px;
+
         padding: 15px 16px 15px 16px;
         outline: transparent;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -17,6 +26,19 @@
         transition-property: border-color;
         transition-duration:  var(--transition-duration);
         transition-timing-function: var(--timing-function);
+
+        
+        @media screen and (min-width: 768px) {
+           margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: inline-block;
+           min-width: 358px;
+           margin-right: 12px;
+           margin-bottom: 0;
+
+        }
     }
     &__input:focus-within {
         border-color: var(--accent-color);

@@ -1,4 +1,14 @@
 .project {
+    --items: 1;
+
+	@media screen and (min-width: 768px) {
+		--items: 2;
+	}
+
+	@media screen and (min-width: 1200px) {
+		--items: 3;
+	}
+
     &__content {
         padding: 20px 24px;
         border-left: 1px solid #eeeeee;

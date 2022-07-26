@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
+
 	<link rel="stylesheet" href="./css/main.min.css" />
 	<link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -24,11 +24,18 @@
 	<!-- portfolio -->
 	<header class="header">
 		<div class="container header__container">
-			<a class="logo header__logo" href="WebStudio" aria-label="logo"> Web<span class="header__logo--color">Studio</span></a>
+			<a class="logo header__logo" href="WebStudio" aria-label="logo">
+				Web<span class="header__logo--color">Studio</span></a>
+			<button class="btn-menu" type="button" data-menu-button>
+				<svg class="btn-menu__icon" width="24" height="16">
+					<use class="btn-menu__burger" href="./images/icons.svg#mobile-menu"></use>
+					<use class="btn-menu__close" href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
 			<nav class="nav">
 				<ul class="nav__list nav__list--location">
 					<li class="nav__item">
-						<a class="nav__link" href="./index.html">Студия</a>
+						<a class="nav__link " href="./index.html">Студия</a>
 					</li>
 					<li class="nav__item">
 						<a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
@@ -54,6 +61,48 @@
 			</ul>
 		</div>
 	</header>
+	<div class="mobile-menu" data-menu>
+
+		<ul class="mobile-menu-nav">
+			<li class="mobile-menu-nav__item">
+				<a class="mobile-menu-nav__link " href="./index.html">Студия</a>
+			</li>
+			<li class="mobile-menu-nav__item">
+				<a class="mobile-menu-nav__link mobile-menu-nav__link--current" href="./portfolio.html">Портфолио</a>
+			</li>
+			<li class="mobile-menu-nav__item">
+				<a class="mobile-menu-nav__link" href="Контакты">Контакты</a>
+			</li>
+		</ul>
+
+		<ul class="mobile-menu-contact">
+			<li class="mobile-menu-contact__item">
+				<a class="mobile-menu-contact__link mobile-menu-contact__link--current" href="tel:+380961111111">+38 096
+					111 11 11</a>
+			</li>
+			<li class="mobile-menu-contact__item">
+				<a class="mobile-menu-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+			</li>
+		</ul>
+		<ul class="mobile-menu-social">
+			<li class="mobile-menu-social__item">
+				<a class="mobile-menu-social__link" href="" target="_blank" rel="noopener noreferrer"
+					aria-label="instagram">instagram</a>
+			</li>
+			<li class="mobile-menu-social__item">
+				<a class="mobile-menu-social__link" href="" target="_blank" rel="noopener noreferrer"
+					aria-label="twitter">twitter</a>
+			</li>
+			<li class="mobile-menu-social__item">
+				<a class="mobile-menu-social__link" href="" target="_blank" rel="noopener noreferrer"
+					aria-label="facebook">facebook</a>
+			</li>
+			<li class="mobile-menu-social__item">
+				<a class="mobile-menu-social__link" href="" target="_blank" rel="noopener noreferrer"
+					aria-label="linkedin">linkedin</a>
+			</li>
+		</ul>
+	</div>
 	<main>
 		<section class="section">
 			<div class="container">
@@ -66,7 +115,8 @@
 						<button class="button button__filter button__filter--web" type="button">Веб-сайты</button>
 					</li>
 					<li class="filter__item">
-						<button class="button button__filter button__filter--application" type="button">Приложения</button>
+						<button class="button button__filter button__filter--application"
+							type="button">Приложения</button>
 					</li>
 					<li class="filter__item">
 						<button class="button button__filter button__filter--design" type="button">Дизайн</button>
@@ -249,20 +299,14 @@
 	<!-- footer -->
 	<footer class="footer">
 		<div class="container container__footer">
-			
+
 			<div class="footer__wrapper">
 				<a class="logo footer__logo" href="WebStudio" aria-label="logo">
-					Web<span class="footer__logo--color">Studio</span></a
-				>
+					Web<span class="footer__logo--color">Studio</span></a>
 				<ul class="footer__contact">
 					<li class="footer__item">
-						<a
-							class="footer__link footer__link--color"
-							href="https://goo.gl/maps/sdTWrFby8Wr7bBPv6"
-							target="_blank"
-							rel="noopener noreferrer"
-							>г. Киев, пр-т Леси Украинки, 26</a
-						>
+						<a class="footer__link footer__link--color" href="https://goo.gl/maps/sdTWrFby8Wr7bBPv6"
+							target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
 					</li>
 					<li class="footer__item">
 						<a class="footer__link" href="mailto:info@example.com">info@example.com</a>
@@ -276,49 +320,33 @@
 				<p class="slogan">присоединяйтесь</p>
 				<ul class="social-media">
 					<li class="social-media__item">
-						<a
-							class="social-media__link social-media__link--color"
-							href=""
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="instagram"
-							><svg class="social-media__icon" width="20" height="20">
+						<a class="social-media__link social-media__link--color" href="" target="_blank"
+							rel="noopener noreferrer" aria-label="instagram"><svg class="social-media__icon" width="20"
+								height="20">
 								<use href="./images/icons.svg#icon-instagram"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="social-media__item">
-						<a
-							class="social-media__link social-media__link--color"
-							href=""
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="twitter"
-							><svg class="social-media__icon" width="20" height="20">
-								<use href="./images/icons.svg#icon-twitter"></use></svg
-						></a>
+						<a class="social-media__link social-media__link--color" href="" target="_blank"
+							rel="noopener noreferrer" aria-label="twitter"><svg class="social-media__icon" width="20"
+								height="20">
+								<use href="./images/icons.svg#icon-twitter"></use>
+							</svg></a>
 					</li>
 					<li class="social-media__item">
-						<a
-							class="social-media__link social-media__link--color"
-							href=""
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="facebook"
-							><svg class="social-media__icon" width="20" height="20">
-								<use href="./images/icons.svg#icon-facebook"></use></svg
-						></a>
+						<a class="social-media__link social-media__link--color" href="" target="_blank"
+							rel="noopener noreferrer" aria-label="facebook"><svg class="social-media__icon" width="20"
+								height="20">
+								<use href="./images/icons.svg#icon-facebook"></use>
+							</svg></a>
 					</li>
 					<li class="social-media__item">
-						<a
-							class="social-media__link social-media__link--color"
-							href=""
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="linkedin"
-							><svg class="social-media__icon" width="20" height="20">
-								<use href="./images/icons.svg#icon-linkedin"></use></svg
-						></a>
+						<a class="social-media__link social-media__link--color" href="" target="_blank"
+							rel="noopener noreferrer" aria-label="linkedin"><svg class="social-media__icon" width="20"
+								height="20">
+								<use href="./images/icons.svg#icon-linkedin"></use>
+							</svg></a>
 					</li>
 				</ul>
 			</div>
@@ -327,8 +355,7 @@
 				<label>
 					<input class="form__input" type="email" name="email" placeholder="E-mail" required />
 				</label>
-				<button class="button button--position" type="submit"
-					>Подписаться
+				<button class="button button--position" type="submit">Подписаться
 					<svg class="button__icon-send" width="24" height="24">
 						<use href="./images/icons.svg#icon-send"></use>
 					</svg>
@@ -336,6 +363,16 @@
 			</form>
 		</div>
 	</footer>
+
+	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask/inputmask.min.js"
+		integrity="sha512-DVfS/GbZzLMmxBL/CW92N84eHP2Fq9d+r9RKbvctcvzISVfu+WvD+MCvbK9j8I6nVLrntGo3UUVrNFUDX0ukBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./js/input-mask.js"></script>
+
 </body>
 
 </html>

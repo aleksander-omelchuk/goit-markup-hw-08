@@ -492,25 +492,32 @@ body.no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 8px;
 }
-.filter--position {
-  margin-bottom: 50px;
-}
-.filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .filter--position {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter--position {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter--position {
+    margin-bottom: 50px;
+  }
 }
 
 .logo {
@@ -1134,6 +1141,19 @@ body.no-scroll {
   border-color: var(--accent-color);
 }
 
+.project {
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    --items: 3;
+  }
+}
 .project__content {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;

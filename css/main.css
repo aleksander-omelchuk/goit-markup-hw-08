@@ -863,7 +863,6 @@ body.no-scroll {
 .mobile-menu-nav__link--current {
   color: var(--accent-color);
 }
-
 .mobile-menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }

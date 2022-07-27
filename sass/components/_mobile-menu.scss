@@ -78,12 +78,13 @@
     &__link--current {
         color:var(--accent-color);
     }
-}
-.mobile-menu-nav__item {
-	&:not(:last-child) {
-		margin-bottom: 32px;
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 32px;
+		}
+	
 	}
-
+	
 }
 
 .mobile-menu-contact {

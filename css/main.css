@@ -639,6 +639,7 @@ body.no-scroll {
   position: absolute;
   top: 0;
   left: 0;
+  margin-top: 1px;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition-property: -webkit-transform;
@@ -1213,6 +1214,11 @@ body.no-scroll {
 @media screen and (min-width: 1200px) {
   .project {
     --items: 3;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__content--height {
+    height: 146px;
   }
 }
 .project__content {

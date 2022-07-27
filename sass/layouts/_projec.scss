@@ -1,13 +1,23 @@
 .project {
     --items: 1;
 
-	@media screen and (min-width: 768px) {
-		--items: 2;
-	}
+    @media screen and (min-width: 768px) {
+        --items: 2;
+
+    }
 
 	@media screen and (min-width: 1200px) {
 		--items: 3;
+       
 	}
+    
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		
+        &__content--height {
+            height: 146px;
+        }
+	}
+
 
     &__content {
         padding: 20px 24px;

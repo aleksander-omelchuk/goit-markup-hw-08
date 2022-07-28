@@ -17,7 +17,7 @@
 }
 
 .btn-menu__burger {
-	transition: 500ms;
+	transition: 250ms;
 
 	.btn-menu.is-open & {
 		opacity: 0;
@@ -27,7 +27,7 @@
 .btn-menu__close {
     fill: #212121;
     opacity: 0;
-	transition: 500ms;
+	transition: 250ms;
 
     .btn-menu.is-open & {
 		opacity: 1;

@@ -209,7 +209,7 @@ body.no-scroll {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  min-width: 450px;
+  width: 100%;
   height: 50px;
   margin-bottom: 60px;
   padding: 15px 16px 15px 16px;
@@ -800,8 +800,8 @@ body.no-scroll {
 }
 
 .btn-menu__burger {
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 250ms;
+  transition: 250ms;
 }
 .btn-menu.is-open .btn-menu__burger {
   opacity: 0;
@@ -810,8 +810,8 @@ body.no-scroll {
 .btn-menu__close {
   fill: #212121;
   opacity: 0;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 250ms;
+  transition: 250ms;
 }
 .btn-menu.is-open .btn-menu__close {
   opacity: 1;

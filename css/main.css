@@ -234,9 +234,7 @@ body.no-scroll {
 @media screen and (min-width: 1200px) {
   .form__input {
     display: inline-block;
-    min-width: 358px;
-    margin-right: 12px;
-    margin-bottom: 0;
+    max-width: 358px;
   }
 }
 .form__input:focus-within {
@@ -320,7 +318,7 @@ body.no-scroll {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 528px;
+  max-width: 450px;
   min-height: 581px;
   padding: 40px;
   background-color: var(--main-background-color);

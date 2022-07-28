@@ -320,7 +320,7 @@ body.no-scroll {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
+  max-width: 528px;
   min-height: 581px;
   padding: 40px;
   background-color: var(--main-background-color);
@@ -1037,6 +1037,7 @@ body.no-scroll {
 @media screen and (min-width: 768px) {
   .features {
     --items: 2;
+    text-align: start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1045,10 +1046,16 @@ body.no-scroll {
   }
 }
 .features__title {
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--titel-color);
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
 }
 .features__text {
   line-height: 1.71;

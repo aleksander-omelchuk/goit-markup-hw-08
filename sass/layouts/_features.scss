@@ -4,13 +4,19 @@
 
 	@media screen and (min-width: 768px) {
 		--items: 2;
+		text-align: start;
 	}
 
 	@media screen and (min-width: 1200px) {
 		--items: 4;
+		
 	}
 
 	&__title {
+		@media screen and (min-width: 768px) {
+				text-align: start;
+			}
+		text-align: center;
 		font-size: 14px;
 		line-height: 1.14;
 		text-transform: uppercase;

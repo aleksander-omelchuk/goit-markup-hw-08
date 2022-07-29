@@ -353,6 +353,11 @@ body.no-scroll {
   margin-bottom: 12px;
   color: var(--titel-color);
 }
+@media screen and (min-width: 480px) {
+  .modal__chapter {
+    text-align: center;
+  }
+}
 .modal__body {
   display: -webkit-box;
   display: -ms-flexbox;

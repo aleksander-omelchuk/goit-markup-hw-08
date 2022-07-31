@@ -208,6 +208,7 @@ body.no-scroll {
 @media screen and (min-width: 1200px) {
   .form {
     display: inline-block;
+    text-align: start;
   }
 }
 .form__input {
@@ -662,7 +663,6 @@ body.no-scroll {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 27px 82px;
   color: var(--main-background-color);
 }
 .overlay-card {
@@ -1050,6 +1050,12 @@ body.no-scroll {
   color: var(--main-background-color);
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__title {
+    padding-left: 189px;
+    padding-right: 189px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
@@ -1130,7 +1136,6 @@ body.no-scroll {
   }
   .about__item {
     position: relative;
-    overflow: hidden;
   }
 }
 
